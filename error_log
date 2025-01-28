@@ -1,0 +1,12 @@
+[11-Jul-2023 11:50:02 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/re5f1bjbaowggiqd/public_html/wp-content/themes/albahriah/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/re5f1bjbaowggiqd/public_html/wp-content/themes/albahriah/index.php on line 1
+[29-Nov-2024 18:43:11 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/re5f1bjbaowggiqd/public_html/wp-content/themes/albahriah/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/re5f1bjbaowggiqd/public_html/wp-content/themes/albahriah/index.php on line 1
+[29-Nov-2024 18:43:20 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/re5f1bjbaowggiqd/public_html/wp-content/themes/albahriah/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/re5f1bjbaowggiqd/public_html/wp-content/themes/albahriah/index.php on line 1
