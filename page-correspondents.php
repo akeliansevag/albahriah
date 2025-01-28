@@ -218,8 +218,8 @@ if ($c) {
     <div class="pt-5">
         <div class="">
             <form method="get" action="" id="contactform">
-                <div class="row justify-content-center">
-                    <div class="col-md-6 col-sm-6">
+                <div class="">
+                    <div class="">
                         <div class="text-center mb-2 text-lg">
                             <label>Select country to search for a correspondent: </label>
                         </div>
