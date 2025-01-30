@@ -254,48 +254,81 @@ if ($c) {
             border: 1px solid #ddd;
         }
 
+        th {
+            background-color: black;
+            color: white;
+            font-size: 20px;
+        }
+
         th,
         td {
             text-align: left;
             padding: 8px;
+            border: 1px solid rgba(0, 0, 0, 0.4);
         }
 
         tr:nth-child(even) {
             background-color: #f2f2f2
         }
+
+        tr td:first-child {
+            font-weight: bold;
+        }
     </style>
     <?php if ($correspondents): ?>
-        <div class="px-5">
+        <div class="container">
             <div style="overflow-x:auto;">
-                <table>
-
-                    <tr>
-                        <th>Company Name</th>
-                        <th>Person in Charge</th>
-                        <th>Address</th>
-                        <th>Office Phone</th>
-                        <th>Emergency Phone</th>
-                        <th>Fax Phone</th>
-                        <th>P.O. Box</th>
-                        <th>Email</th>
-                        <th>Website</th>
-                    </tr>
-                    <?php if ($correspondents): ?>
+                <div class="row"></div>
+                <?php if ($correspondents): ?>
+                    <div class="row">
                         <?php foreach ($correspondents as $cr): ?>
-                            <tr>
-                                <td><?= $cr->post_title; ?></td>
-                                <td><?= get_field("person_in_charge", $cr->ID); ?></td>
-                                <td><?= get_field("address", $cr->ID); ?></td>
-                                <td><?= get_field("office_phone", $cr->ID); ?></td>
-                                <td><?= get_field("emergency_phone", $cr->ID); ?></td>
-                                <td><?= get_field("fax_phone", $cr->ID); ?></td>
-                                <td><?= get_field("po_box", $cr->ID); ?></td>
-                                <td><?= get_field("email", $cr->ID); ?></td>
-                                <td><?= get_field("website", $cr->ID); ?></td>
-                            </tr>
+                            <div class="<?= (count($correspondents) > 1) ? 'col-lg-6' : 'col-lg-12' ?>  mt-4">
+                                <table>
+                                    <tr>
+                                        <th colspan="2"><?= $cr->post_title; ?></th>
+                                    </tr>
+                                    <tr>
+                                        <td>Person in Charge</td>
+                                        <td><?= get_field("person_in_charge", $cr->ID); ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Address</td>
+                                        <td><?= get_field("address", $cr->ID); ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Office Phone</td>
+                                        <td><?= get_field("office_phone", $cr->ID); ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Emergency Phone</td>
+                                        <td><?= get_field("emergency_phone", $cr->ID); ?></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Fax Phone</td>
+                                        <td><?= get_field("fax_phone", $cr->ID); ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td>P.O. Box</td>
+                                        <td><?= get_field("po_box", $cr->ID); ?></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Email</td>
+                                        <td><?= get_field("email", $cr->ID); ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Website</td>
+                                        <td><?= get_field("website", $cr->ID); ?></td>
+                                    </tr>
+                                </table>
+                            </div>
+
                         <?php endforeach; ?>
-                    <?php endif; ?>
-                </table>
+                    </div>
+
+                <?php endif; ?>
+
             </div>
         </div>
 
