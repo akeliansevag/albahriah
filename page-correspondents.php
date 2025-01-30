@@ -319,7 +319,11 @@ if ($c) {
                                     </tr>
                                     <tr>
                                         <td>Website</td>
-                                        <td><a target="_blank" href="<?= get_field("website", $cr->ID); ?>"><?= get_field("website", $cr->ID); ?></a></td>
+                                        <td>
+                                            <a target="_blank" href="<?= get_field("website", $cr->ID); ?>">
+                                                <?= get_field("website", $cr->ID); ?>
+                                            </a>
+                                        </td>
                                     </tr>
                                 </table>
                             </div>
