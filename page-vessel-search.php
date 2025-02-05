@@ -77,7 +77,7 @@ if ($v) {
                         <th>Flag</th>
                         <th>Type</th>
                         <th>Built</th>
-                        <th>Blue Card</th>
+                        <th>Blue Card Period</th>
                         <th>Shipowners</th>
                     </tr>
                     <?php if ($vessels_title): ?>

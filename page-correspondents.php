@@ -300,7 +300,7 @@ if ($c) {
                                         <td><?= get_field("office_phone", $cr->ID); ?></td>
                                     </tr>
                                     <tr>
-                                        <td>Emergency Phone</td>
+                                        <td>Mobile Phone</td>
                                         <td><?= get_field("emergency_phone", $cr->ID); ?></td>
                                     </tr>
 
@@ -308,10 +308,10 @@ if ($c) {
                                         <td>Fax Phone</td>
                                         <td><?= get_field("fax_phone", $cr->ID); ?></td>
                                     </tr>
-                                    <tr>
+                                    <!-- <tr>
                                         <td>P.O. Box</td>
                                         <td><?= get_field("po_box", $cr->ID); ?></td>
-                                    </tr>
+                                    </tr> -->
 
                                     <tr>
                                         <td>Email</td>
