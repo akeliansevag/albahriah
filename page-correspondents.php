@@ -289,7 +289,9 @@ if ($c) {
                                     </tr>
                                     <tr>
                                         <td>Person in Charge</td>
-                                        <td><?= get_field("person_in_charge", $cr->ID); ?></td>
+                                        <td>
+                                            <?= get_field("person_in_charge", $cr->ID); ?>.
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Address</td>
